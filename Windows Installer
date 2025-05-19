@@ -1,0 +1,59 @@
+# Install Rust if needed
+if (-not (Get-Command rustc -ErrorAction SilentlyContinue)) {
+    Write-Host "Installing Rust toolchain..."
+    irm https://win.rustup.rs -UseBasicParsing | iex
+}
+
+# Install Git if needed
+if (-not (Get-Command git -ErrorAction SilentlyContinue)) {
+    Write-Host "Installing Git for Windows..."
+    $gitUrl = "https://github.com/git-for-windows/git/releases/latest/download/Git-2.45.2-64-bit.exe"
+    $gitPath = "$env:TEMP\git-installer.exe"
+    Invoke-WebRequest $gitUrl -OutFile $gitPath
+    Start-Process $gitPath -ArgumentList "/VERYSILENT" -Wait
+    $env:Path += ";C:\Program Files\Git\cmd"
+}
+
+# Install Npcap if needed
+function Test-Npcap {
+    $reg = "HKLM:\SYSTEM\CurrentControlSet\Services\npcap"
+    return Test-Path $reg
+}
+if (-not (Test-Npcap)) {
+    Write-Host "Npcap not found. Downloading and installing Npcap..."
+    $npcapUrl = "https://npcap.com/dist/npcap-1.78.exe"
+    $npcapPath = "$env:TEMP\npcap-setup.exe"
+    Invoke-WebRequest $npcapUrl -OutFile $npcapPath
+    Start-Process $npcapPath -ArgumentList "/S" -Wait
+}
+
+# Clone or update repo
+$repoUrl = "https://github.com/nstone-lithos/lithoscan.git"
+$repoDir = "$env:TEMP\lithoscan"
+if (-not (Test-Path $repoDir)) {
+    git clone $repoUrl $repoDir
+} else {
+    cd $repoDir
+    git pull
+}
+
+# Download oui.csv if needed
+$ouiUrl = "https://standards-oui.ieee.org/oui/oui.csv"
+$ouiPath = "$repoDir\oui.csv"
+if (-not (Test-Path $ouiPath)) {
+    Invoke-WebRequest $ouiUrl -OutFile $ouiPath
+}
+
+# Build project
+cd $repoDir
+cargo build --release
+
+# Prompt for args and run
+Write-Host "Enter interface name (e.g. Ethernet):"
+$iface = Read-Host
+Write-Host "Enter CIDR (e.g. 192.168.1.0/24):"
+$cidr = Read-Host
+& "$repoDir\target\release\lithoscan.exe" arp-scan --iface $iface --cidr $cidr
+
+Write-Host "`nDone. Press any key to exit."
+$x = $host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
