@@ -1,34 +1,37 @@
-# Install Rust if needed
+# lithoscan-bootstrap.ps1
+# Bootstrap script for Windows: Installs Rust, Git, Npcap, clones/builds lithoscan, runs scan
+
+# 1. Install Rust if needed (uses stable official installer)
 if (-not (Get-Command rustc -ErrorAction SilentlyContinue)) {
     Write-Host "Installing Rust toolchain..."
-    irm https://win.rustup.rs -UseBasicParsing | iex
+    irm https://win.rustup.rs/ -UseBasicParsing | iex
 }
 
-# Install Git if needed
+# 2. Install Git for Windows if needed (uses latest release)
 if (-not (Get-Command git -ErrorAction SilentlyContinue)) {
     Write-Host "Installing Git for Windows..."
-    $gitUrl = "https://github.com/git-for-windows/git/releases/latest/download/Git-2.45.2-64-bit.exe"
+    $gitUrl = "https://github.com/git-for-windows/git/releases/latest/download/Git-64.exe"
     $gitPath = "$env:TEMP\git-installer.exe"
     Invoke-WebRequest $gitUrl -OutFile $gitPath
     Start-Process $gitPath -ArgumentList "/VERYSILENT" -Wait
     $env:Path += ";C:\Program Files\Git\cmd"
 }
 
-# Install Npcap if needed
+# 3. Install Npcap if needed (uses stable "npcap-installer.exe" redirect)
 function Test-Npcap {
     $reg = "HKLM:\SYSTEM\CurrentControlSet\Services\npcap"
     return Test-Path $reg
 }
 if (-not (Test-Npcap)) {
     Write-Host "Npcap not found. Downloading and installing Npcap..."
-    $npcapUrl = "https://npcap.com/dist/npcap-1.78.exe"
+    $npcapUrl = "https://npcap.com/dist/npcap-installer.exe"
     $npcapPath = "$env:TEMP\npcap-setup.exe"
     Invoke-WebRequest $npcapUrl -OutFile $npcapPath
     Start-Process $npcapPath -ArgumentList "/S" -Wait
 }
 
-# Clone or update repo
-$repoUrl = "https://github.com/lithos-systems/lithoscan.git"
+# 4. Clone or update repo
+$repoUrl = "https://github.com/Lithos-Systems/lithoscan.git"
 $repoDir = "$env:TEMP\lithoscan"
 if (-not (Test-Path $repoDir)) {
     git clone $repoUrl $repoDir
@@ -37,18 +40,18 @@ if (-not (Test-Path $repoDir)) {
     git pull
 }
 
-# Download oui.csv if needed
+# 5. Download oui.csv from stable IEEE URL
 $ouiUrl = "https://standards-oui.ieee.org/oui/oui.csv"
 $ouiPath = "$repoDir\oui.csv"
 if (-not (Test-Path $ouiPath)) {
     Invoke-WebRequest $ouiUrl -OutFile $ouiPath
 }
 
-# Build project
+# 6. Build project (release mode)
 cd $repoDir
 cargo build --release
 
-# Prompt for args and run
+# 7. Prompt for args and run
 Write-Host "Enter interface name (e.g. Ethernet):"
 $iface = Read-Host
 Write-Host "Enter CIDR (e.g. 192.168.1.0/24):"
