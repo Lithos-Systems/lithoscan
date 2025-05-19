@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+        
+    
+                    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125032952-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-125032952-1');
+    gtag('config', 'G-GTPNWEC9Q4');
+</script>
+        <!-- Global site tag (gtag.js) - Google Ads: 779293260 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-779293260"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-779293260');
+</script>                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3811671471809762"
+        crossorigin="anonymous"></script>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta id="viewport" name="viewport" data-mw-size="360">
+
+<script type="text/javascript">
+    !function(){function e(){if(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)){var e=window.screen.width,t=+document.getElementById("viewport").getAttribute("data-mw-size"),i=e/t,n=document.getElementById("viewport");e<t?n.setAttribute("content","initial-scale="+i+", maximum-scale="+i+", minimum-scale="+i+", user-scalable=no, width="+t):n.setAttribute("content","initial-scale=1.0, maximum-scale=1, minimum-scale=1.0, user-scalable=yes, width="+e)}}window.addEventListener("resize",function(){e()}),e()}();
+</script>    <meta name="csrf-token" content="TwZQExfVWa4AoXbAZ5P6lHxdC4aUVa7Wb9n99pyk">
+    <link rel="shortcut icon" type="image/x-icon" href="https://macaddress.io/images/favicon_package/fav-6x.png">
+
+        <link rel="apple-touch-icon" sizes="144x144" href="https://macaddress.io/images/favicon_package/apple-touch-icon.png">
+        <link rel="manifest" crossorigin="use-credentials" href="https://macaddress.io/site.webmanifest">
+        <link rel="mask-icon" href="https://macaddress.io/images/favicon_package/safari-pinned-tab.svg" color="#2c9850">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+        <title>CSV MAC Vendors Database Download | MAC Address Vendor Lookup</title>
+
+        <meta name="description" content="Get the most comprehensive database CSV MAC Vendors Database Download of registered MAC address blocks and MAC vendors, also referred to as OUIs (Organizationally Unique Identifiers). Accurate. Up-to-date."/>
+
+    <meta name="keywords" content="mac address lookup,mac address vendor,mac vendor,mac lookup,mac address manufacturer,mac vendor lookup,random mac address generator,mac address lookup api">
+
+    <meta property="og:title" content="CSV MAC Vendors Database Download | MAC Address Vendor Lookup" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://macaddress.io" />
+    <meta property="og:description" content="Get the most comprehensive database CSV MAC Vendors Database Download of registered MAC address blocks and MAC vendors, also referred to as OUIs (Organizationally Unique Identifiers). Accurate. Up-to-date." />
+    <meta property="og:image" content="https://macaddress.io/images/vertical-logo-black.png?v=2" />
+    <meta property="og:locale" content="en_GB" />
+
+    <meta itemprop="name" content="CSV MAC Vendors Database Download | MAC Address Vendor Lookup" />
+    <meta itemprop="description" content="Get the most comprehensive database CSV MAC Vendors Database Download of registered MAC address blocks and MAC vendors, also referred to as OUIs (Organizationally Unique Identifiers). Accurate. Up-to-date." />
+    <meta itemprop="image" content="https://macaddress.io/images/vertical-logo-black.png?v=2" />
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CSV MAC Vendors Database Download | MAC Address Vendor Lookup">
+    <meta name="twitter:description" content="Get the most comprehensive database CSV MAC Vendors Database Download of registered MAC address blocks and MAC vendors, also referred to as OUIs (Organizationally Unique Identifiers). Accurate. Up-to-date.">
+    <meta name="twitter:image" content="https://macaddress.io/images/vertical-logo-black.png?v=2">
+
+    <script>
+        IF_LOGGED = '0';
+    </script>
+    <link media="all" type="text/css" rel="stylesheet" href="https://macaddress.io/css/app.css?id=c32757c9cc7cfed1f51fa850c70310aa">
+        </head>
+<body>
+<div id="app">
+            <header class=" with-second-bar-header header-non-first-slide">
+    <div class="content-in-blocks flex-row">
+        <div class="svg-wrapper">
+    <a href="https://macaddress.io" title="Mac Address Lookup">
+        <img src="https://macaddress.io/images/logo-white-v2.png" alt="MacAddress.io">
+    </a>
+</div>
+        <nav class="desktop-menu flex-row">
+    <a href="https://macaddress.io/database-download" title="About MAC vendors database | Database download | MAC Address Vendor Lookup" id="database-download-anchor">Database Download</a>
+    <a href="https://macaddress.io" title="MAC Address Vendor Lookup" id="-anchor" data-additional-anchor="mac-address-lookup">Lookup</a>
+    <a href="https://macaddress.io/api" title="About MAC address API | API | MAC Address Vendor Lookup" id="api-anchor">API</a>
+    <a href="https://macaddress.io/mac-address-generator" title="MAC address generator | MAC Address Vendor Lookup" id="mac-address-generator-anchor">Generator</a>
+    <a href="https://macaddress.io/statistics" title="Global statistics over the MAC address blocks distribution | MAC Address Vendor Lookup" id="statistics-anchor">Statistics</a>
+    <a href="https://macaddress.io/faq" title="Frequently asked questions | FAQ |MAC Address Vendor Lookup"  id="faq-anchor">FAQ</a>
+</nav>
+        <div class="auth-block flex-row">
+                            <a href="https://macaddress.io/login">Login</a>
+                <a href="https://macaddress.io/signup" class="btn common-btn border-white-btn">Sign up</a>
+                    </div>
+        <div class="hamburger-block" hidden>
+            <span class="hamburger-label">Menu</span>
+            <div class="hamburger hamburger--spin" tabindex="0"
+                 aria-label="Menu" role="button" aria-controls="navigation">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </div>
+            <nav id="navigation">
+                <!--navigation goes here-->
+            </nav>
+        </div>
+
+        <nav class="slideout-menu panel" id="menu" role="navigation">
+    <ul>
+        <li><a href="https://macaddress.io" title="MAC Address Vendor Lookup" id="-mobile-anchor" data-additional-anchor="mac-address-lookup">Lookup</a></li>
+        <li><a href="javascript:void(0);" class="link-with-submenu with-icon" id="api-mobile-anchor">API<i class="icon icon-angle-down"></i></a>
+            <ul>
+                <li><a href="https://macaddress.io/api" title="About MAC address API | API | MAC Address Vendor Lookup" id="-submenu-mobile-nav">About</a></li>
+                <li><a href="https://macaddress.io/api/documentation" title="Documentation | API | MAC Address Vendor Lookup" id="documentation-submenu-mobile-nav">API docs</a></li>
+                <li><a href="https://macaddress.io/api/libraries" title="Libraries | API | MAC Address Vendor Lookup" id="libraries-submenu-mobile-nav">Libraries</a></li>
+                <li><a href="https://macaddress.io/api/integrations" title="Integrations | API | MAC Address Vendor Lookup" id="integrations-submenu-mobile-nav">Integrations</a></li>
+                <li><a href="https://macaddress.io/api/utilities" title="Utilities | API | MAC Address Vendor Lookup" id="utilities-submenu-mobile-nav">Utilities</a></li>
+                <li><a href="https://macaddress.io/api/pricing" title="Pricing | API | MAC Address Vendor Lookup" id="pricing-submenu-mobile-nav">Pricing</a></li>
+            </ul>
+        </li>
+        <li><a href="javascript:void(0);" class="link-with-submenu with-icon" id="database-download-mobile-anchor">Database download<i class="icon icon-angle-down"></i></a>
+            <ul>
+                <li><a href="https://macaddress.io/database-download" title="About MAC vendors database | Database download | MAC Address Vendor Lookup" id="-submenu-mobile-nav">About</a></li>
+                <li><a href="https://macaddress.io/database-download/json" title="JSON database | Database download | MAC Address Vendor Lookup" id="json-submenu-mobile-nav">JSON</a></li>
+                <li><a href="https://macaddress.io/database-download/xml" title="XML database | Database download | MAC Address Vendor Lookup" id="xml-submenu-mobile-nav">XML</a></li>
+                <li><a href="https://macaddress.io/database-download/csv" title="CSV database | Database download | MAC Address Vendor Lookup" id="csv-submenu-mobile-nav">CSV</a></li>
+                <li><a href="https://macaddress.io/database-download/cisco-vendor" title="Cisco vendor database | Database download | MAC Address Vendor Lookup" id="cisco-vendor-submenu-mobile-nav">Cisco vendorMacs.xml</a></li>
+            </ul>
+        </li>
+        <li><a href="https://macaddress.io/mac-address-generator" class="link-with-submenu with-icon" title="MAC address generator | MAC Address Vendor Lookup" id="mac-address-generator-mobile-anchor">Generator</a></li>
+        <li><a href="javascript:void(0);" class="link-with-submenu with-icon" id="statistics-mobile-anchor">Statistics<i class="icon icon-angle-down"></i></a>
+            <ul>
+                <li><a href="https://macaddress.io/statistics" title="OUI registrations statistics | Statistics | MAC Address Vendor Lookup" id="-submenu-mobile-nav">About</a></li>
+                <li><a href="https://macaddress.io/statistics/country" title="OUI registrations by country | Statistics  | MAC Address Vendor Lookup" id="country-submenu-mobile-nav">By the country</a></li>
+                <li><a href="https://macaddress.io/statistics/company" title="OUI registrations by company | Statistics  | MAC Address Vendor Lookup" id="company-submenu-mobile-nav">By the company</a></li>
+                <li><a href="https://macaddress.io/statistics/date" title="OUI registrations by date | Statistics  | MAC Address Vendor Lookup" id="date-submenu-mobile-nav">By the date</a></li>
+                <li><a href="https://macaddress.io/statistics/block-size" title="OUI registrations by block size | Statistics | MAC Address Vendor Lookup" id="block-size-submenu-mobile-nav">By the block size</a></li>
+            </ul>
+        </li>
+        <li><a href="https://macaddress.io/faq" title="Frequently asked questions | FAQ |MAC Address Vendor Lookup" id="faq-mobile-anchor">FAQ</a></li>
+        <li class="hr-li"></li>
+        <li class="btn-block-li">
+                            <a href="https://macaddress.io/login">Login</a>
+                <a href="https://macaddress.io/signup" class="btn common-btn">Sign up</a>
+                    </li>
+    </ul>
+</nav>
+    </div>
+
+        <div class="subheader subheader-subpages">
+        <div class="second-bar-header content-in-blocks flex-row">
+            <div class="subheader-border"></div>
+            <a href="https://macaddress.io" class="second-bar-logo" title="Mac Address Lookup">
+                <div class="svg-wrapper">
+    <svg width="24px" height="18px" viewBox="0 0 24 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Header-white-Copy-3" transform="translate(-165.000000, -22.000000)" fill-rule="nonzero">
+                <g id="Header" transform="translate(165.000000, 20.000000)">
+                    <g id="Group-2" transform="translate(0.000000, 2.000000)">
+                        <g id="Background-Copy-4">
+                            <g id="v204-ning-91-technologyobjects-id-393462-original-[Converted]">
+                                <g id="Object">
+                                    <g id="Group">
+                                        <path d="M20.8118055,-0.0462488187 C20.591171,-0.0462488187 20.4073089,0.069709176 20.382794,0.222285485 C20.2969917,0.698323568 20.1315158,3.27991471 20.1315158,4.29912446 L20.1315158,10.194673 C20.1315158,10.3655585 20.3276353,10.4998256 20.5666561,10.4998256 L21.0446975,10.4998256 C21.2837183,10.4998256 21.4798378,10.3655585 21.4798378,10.194673 L21.4798378,4.29912446 C21.4798378,3.29212082 21.3266194,0.637293045 21.2408171,0.216182432 C21.2101734,0.0636061236 21.0263113,-0.0462488187 20.8118055,-0.0462488187 Z" id="Shape" fill="#22BD6E" transform="translate(20.805677, 5.226788) rotate(20.000000) translate(-20.805677, -5.226788) "></path>
+                                        <path d="M23.4153846,10.0055944 C23.7353846,10.0055944 24,10.2965035 24,10.6545455 L24,17.351049 C24,17.7090909 23.7415385,18 23.4153846,18 L0.584615385,18 C0.264615385,18 0,17.7090909 0,17.351049 L0,10.648951 C0,10.2909091 0.258461538,10 0.584615385,10 L23.4153846,10 L23.4153846,10.0055944 Z" id="Shape" fill="#22BD6E"></path>
+                                        <path d="M4.09551175,3.07167832 C3.87487723,3.07167832 3.69101513,3.18763632 3.66650019,3.34021263 C3.58682661,3.81625071 3.41522199,6.39784185 3.41522199,7.4170516 L3.41522199,13.3126002 C3.41522199,13.4834856 3.61134156,13.6177528 3.85036228,13.6177528 L4.32840374,13.6177528 C4.56742447,13.6177528 4.76354404,13.4834856 4.76354404,13.3126002 L4.76354404,7.4170516 C4.76354404,6.41004796 4.61032562,3.75522019 4.52452331,3.33410957 C4.49387963,3.18153326 4.31614627,3.07167832 4.09551175,3.07167832 Z" id="Shape" fill="#22BD6E" transform="translate(4.089383, 8.344716) rotate(-9.000000) translate(-4.089383, -8.344716) "></path>
+                                        <ellipse id="Oval" fill="#393530" cx="4.20123237" cy="14.1961983" rx="1.20123237" ry="1.19619826"></ellipse>
+                                        <ellipse id="Oval" fill="#393530" cx="20.2012324" cy="14.1961983" rx="1.20123237" ry="1.19619826"></ellipse>
+                                        <ellipse id="Oval" fill="#E0E4E3" cx="16.2012324" cy="14.1961983" rx="1.20123237" ry="1.19619826"></ellipse>
+                                        <ellipse id="Oval" fill="#E0E4E3" cx="12.2012324" cy="14.1961983" rx="1.20123237" ry="1.19619826"></ellipse>
+                                        <ellipse id="Oval" fill="#E0E4E3" cx="8.20123237" cy="14.1961983" rx="1.20123237" ry="1.19619826"></ellipse>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </svg>
+</div>            </a>
+                            <nav class="desktop-menu desktop-sub-menu flex-row">
+                    <a href="https://macaddress.io/database-download" title="About MAC vendors database | Database download | MAC Address Vendor Lookup"
+                       id="-submenu-nav">About</a>
+                    <a href="https://macaddress.io/database-download/json" title="JSON database | Database download | MAC Address Vendor Lookup"
+                       id="json-submenu-nav">JSON</a>
+                    <a href="https://macaddress.io/database-download/xml" title="XML database | Database download | MAC Address Vendor Lookup"
+                       id="xml-submenu-nav">XML</a>
+                    <a href="https://macaddress.io/database-download/csv" title="CSV database | Database download | MAC Address Vendor Lookup"
+                       id="csv-submenu-nav">CSV</a>
+                    <a href="https://macaddress.io/database-download/cisco-vendor" title="Cisco vendor database | Database download | MAC Address Vendor Lookup"
+                       id="cisco-vendor-submenu-nav">Cisco vendorMacs.xml</a>
+                </nav>
+                
+        </div>
+    </div>
+    </header>
+    
+    
+            <section class="info-block-with-menu faq-block db-with-menu-info-block">
+    <div class="content-in-blocks">
+        <div class="grid-item info-column info-column-left db-info-column">
+            <h1>MAC address vendors database in CSV format</h1>
+
+            <h3>Permanent URL</h3>
+            <p class="h3-notice">
+    Please note that in the FREE version the main fields have been redacted.
+    <br/>
+    For the complete database, please use the <a href="javascript:void(0);" data-db-request-modal-open-trigger>request form</a>.
+</p>
+            <div class="get-block">
+    <input type="hidden" value="" id="apiUrlLinkHiddenInput"/>
+    
+    <span class="api-link common-link" id="apiUrlLink" data-toggle="tooltip" title="copied" data-placement="top">https://macaddress.io/database/macaddress.io-db.csv
+        <span class="icon-bg"><i class="icon-docs" aria-hidden="true"></i></span></span>
+</div>
+
+            <h3>Output sample</h3>
+            <pre class="output"><code class="hljs nohighlight">oui,isPrivate,companyName,companyAddress,countryCode,assignmentBlockSize,dateCreated,dateUpdated
+08:EC:F5,0,"Cisco Systems, Inc","80 West Tasman Drive San Jose CA 94568",US,MA-L,2018-11-09,2018-11-09</code></pre>
+
+            <h3>Field descriptions</h3>
+<table class="param-table">
+    <tbody>
+    <tr>
+        <td><span>oui</span></td>
+        <td><span>Organization Unique Identifier <helper-icon-tippy-component title="" faq="what-is-an-organizationally-unique-identifier-oui"></helper-icon-tippy-component></span>
+</td>
+    </tr>
+    <tr>
+        <td><span>isPrivate</span></td>
+        <td><span>For an extra fee to IEEE, vendors can hide their details. In this case, this flag is set to <b>'true'</b> and companyName, companyAddress and countryCode are 'private'.</span></td>
+    </tr>
+    <tr>
+        <td><span>companyName</span></td>
+        <td><span>Name of the company which registered the MAC addresses block.</span></td>
+    </tr>
+    <tr>
+        <td><span>companyAddress</span></td>
+        <td><span>Company's full address.</span></td>
+    </tr>
+    <tr>
+        <td><span>countryCode</span></td>
+        <td><span>Company's country code in <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2" class="common-link" title="ISO 3166-1 alpha-2" rel="nofollow" target="_blank">ISO 3166</a> format.</span></td>
+    </tr>
+    <tr>
+        <td><span>assignmentBlockSize</span></td>
+        <td><span>Assignment block size, one of the following: <helper-icon-tippy-component title="" faq="what-is-a-ma-l-ma-m-ma-s-assignment"></helper-icon-tippy-component>
+    <ul class="docs-small-list">
+        <li>'MA-L' for MAC Address Block Large</li>
+        <li>'MA-M' for MAC Address Block Medium</li>
+        <li>'MA-S' for MAC Address Block Small</li>
+        <li>'IAB' for Individual Address Block</li>
+    </ul>
+</span></td>
+    </tr>
+    <tr>
+        <td><span>dateCreated</span></td>
+        <td><span>Date when the range was allocated, in YYYY-MM-DD format. Is available for ranges registered after 27 June, 2018.</span></td>
+    </tr>
+    <tr>
+        <td><span>dateUpdated</span></td>
+        <td><span>Date when the range was last updated, in YYYY-MM-DD format. Is available for ranges registered after 27 June, 2018.</span></td>
+    </tr>
+    </tbody>
+</table>        </div>
+        <div class="grid-item fixed-menu right-menu sample-db-menu fixed-with-second-header">
+            <div class="fixed-menu-wrapper right-menu-wrapper">
+                <div class="sample-output-file-block">
+                    <div class="svg-with-info">
+                        <svg width="65px" height="82px" viewBox="0 0 65 82" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Database-" transform="translate(-517.000000, -2004.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="001-csv" transform="translate(517.000000, 2004.000000)">
+                <path d="M63.5163043,17.2298966 L62.4268478,16.1398621 L48.1621739,1.86762069 L47.0727174,0.777586207 C46.5795652,0.284172414 45.8956522,0 45.1961957,0 L4.18684783,0 C2.51097826,0 0.706521739,1.29503448 0.706521739,4.13675862 L0.706521739,55.137931 L0.706521739,78.5178276 L0.706521739,79.1724138 C0.706521739,80.3557586 1.89630435,81.5094138 3.30369565,81.8727586 C3.37434783,81.8911379 3.44217391,81.918 3.51565217,81.9321379 C3.73608696,81.9759655 3.96076087,82 4.18684783,82 L60.8131522,82 C61.0392391,82 61.263913,81.9759655 61.4843478,81.9321379 C61.5578261,81.918 61.6256522,81.8911379 61.6963043,81.8727586 C63.1036957,81.5094138 64.2934783,80.3557586 64.2934783,79.1724138 L64.2934783,78.5178276 L64.2934783,55.137931 L64.2934783,19.762 C64.2934783,18.6776207 64.1634783,17.8774138 63.5163043,17.2298966 Z M59.2559783,16.9655172 L47.3369565,16.9655172 L47.3369565,5.04017241 L59.2559783,16.9655172 Z M4.18684783,79.1724138 C4.08652174,79.1724138 3.99608696,79.1356552 3.90706522,79.1031379 C3.68663043,78.9985172 3.5326087,78.7779655 3.5326087,78.5178276 L3.5326087,57.9655172 L61.4673913,57.9655172 L61.4673913,78.5178276 C61.4673913,78.7779655 61.3133696,78.9971034 61.0929348,79.1031379 C61.003913,79.1356552 60.9134783,79.1724138 60.8131522,79.1724138 L4.18684783,79.1724138 Z M3.5326087,55.137931 L3.5326087,4.13675862 C3.5326087,3.82996552 3.57923913,2.82758621 4.18684783,2.82758621 L44.5928261,2.82758621 C44.5461957,3.00572414 44.5108696,3.18951724 44.5108696,3.38037931 L44.5108696,19.7931034 L60.9148913,19.7931034 C61.1056522,19.7931034 61.2879348,19.7577586 61.4659783,19.7111034 C61.4659783,19.7323103 61.4673913,19.7407931 61.4673913,19.762 L61.4673913,55.137931 L3.5326087,55.137931 Z" id="Shape"></path>
+                <path d="M17.0045652,64.9694483 C17.3451087,64.5368276 17.7322826,64.2328621 18.1632609,64.0518966 C18.5942391,63.870931 19.0478261,63.7818621 19.5254348,63.7818621 C19.9507609,63.7818621 20.3591304,63.8666897 20.7519565,64.0335172 C21.1447826,64.2003448 21.5022826,64.4717931 21.8244565,64.8450345 L23.4282609,63.4142759 C22.8997826,62.8996552 22.3006522,62.5122759 21.6322826,62.2549655 C20.9625,61.9962414 20.2418478,61.869 19.468913,61.869 C18.6309783,61.869 17.8523913,62.025931 17.1317391,62.3426207 C16.4096739,62.6593103 15.7822826,63.1187931 15.2481522,63.7253103 C14.7140217,64.3318276 14.2943478,65.0882069 13.9919565,65.9958621 C13.6895652,66.904931 13.5383696,67.9582069 13.5383696,69.1556897 C13.5383696,70.3531724 13.6895652,71.4106897 13.9919565,72.3254138 C14.2943478,73.2401379 14.7126087,74.0007586 15.2481522,74.6058621 C15.7822826,75.2123793 16.4068478,75.6690345 17.1218478,75.9786552 C17.8368478,76.2882759 18.6196739,76.4423793 19.468913,76.4423793 C20.2418478,76.4423793 20.9625,76.3137241 21.6322826,76.0564138 C22.3020652,75.7976897 22.8997826,75.4117241 23.4282609,74.8971034 L21.8244565,73.4861379 C21.4895652,73.8607931 21.1193478,74.1308276 20.7138043,74.2976552 C20.3082609,74.4644828 19.8730435,74.5493103 19.4095652,74.5493103 C18.946087,74.5493103 18.5038043,74.4503448 18.0855435,74.2495862 C17.6672826,74.0488276 17.2928261,73.7349655 16.965,73.3023448 C16.6371739,72.8697241 16.378587,72.3141034 16.1920652,71.6298276 C16.0055435,70.9469655 15.9052174,70.1227241 15.8925,69.1556897 C15.9052174,68.1632069 16.0083696,67.3262414 16.2019565,66.6433793 C16.3955435,65.9605172 16.6626087,65.402069 17.0045652,64.9694483 Z" id="Shape"></path>
+                <path d="M33.2517391,69.3663448 C32.8080435,69.044 32.3276087,68.7697241 31.8118478,68.544931 C31.296087,68.3201379 30.8198913,68.0882759 30.3818478,67.8493448 C29.9438043,67.6104138 29.576413,67.3347241 29.281087,67.0180345 C28.9843478,66.7013448 28.8373913,66.2856897 28.8373913,65.771069 C28.8373913,65.5646552 28.8882609,65.3483448 28.991413,65.1235517 C29.0945652,64.8987586 29.2358696,64.6951724 29.4167391,64.5142069 C29.5961957,64.3332414 29.8025,64.1833793 30.0356522,64.0603793 C30.2688043,63.9373793 30.5118478,63.8638621 30.7704348,63.8384138 C31.233913,63.8002414 31.6140217,63.7931724 31.9107609,63.8186207 C32.206087,63.8454828 32.4448913,63.8893103 32.6257609,63.9543448 C32.8052174,64.0193793 32.9451087,64.083 33.0411957,64.1480345 C33.1372826,64.213069 33.2248913,64.2639655 33.3026087,64.3021379 C33.3153261,64.2894138 33.3534783,64.2243793 33.4184783,64.1084483 C33.4820652,63.9925172 33.5597826,63.8468966 33.6502174,63.673 C33.7392391,63.4991034 33.8367391,63.3124828 33.9398913,63.1131379 C34.0430435,62.9123793 34.1334783,62.73 34.2097826,62.5617586 C33.8353261,62.3171724 33.346413,62.1390345 32.7416304,62.0301724 C32.1354348,61.9213103 31.5363043,61.8661724 30.9456522,61.8661724 C30.3663043,61.8661724 29.8152174,61.9552414 29.2938043,62.1362069 C28.7723913,62.3171724 28.3145652,62.5787241 27.9217391,62.9194483 C27.528913,63.2601724 27.2166304,63.6758276 26.9848913,64.1664138 C26.7531522,64.657 26.6372826,65.2168621 26.6372826,65.8474138 C26.6372826,66.543 26.7842391,67.1226552 27.0809783,67.5863793 C27.3763043,68.0501034 27.7507609,68.4530345 28.2015217,68.7937586 C28.6522826,69.1344828 29.1355435,69.4313793 29.6498913,69.6830345 C30.1642391,69.9346897 30.6446739,70.184931 31.0897826,70.4365862 C31.5348913,70.6882414 31.9036957,70.9681724 32.2004348,71.2777931 C32.4957609,71.5874138 32.6441304,71.9606552 32.6441304,72.398931 C32.6441304,73.1213793 32.435,73.6656897 32.0167391,74.0318621 C31.5984783,74.3994483 30.9951087,74.5832414 30.2108696,74.5832414 C29.9522826,74.5832414 29.6767391,74.5563793 29.38,74.5054828 C29.0832609,74.4545862 28.7879348,74.3867241 28.4911957,74.3018966 C28.1944565,74.217069 27.9076087,74.128 27.6320652,74.0318621 C27.3551087,73.9357241 27.1261957,73.8353448 26.9467391,73.7321379 L26.5411957,75.3947586 C26.7602174,75.5884483 27.0202174,75.7524483 27.3240217,75.8881724 C27.626413,76.0238966 27.9443478,76.129931 28.2806522,76.2076897 C28.6155435,76.2854483 28.9476087,76.3405862 29.2754348,76.3716897 C29.6032609,76.4027931 29.9226087,76.4197586 30.2320652,76.4197586 C30.9527174,76.4197586 31.5970652,76.3108966 32.1636957,76.0917586 C32.7303261,75.8726207 33.2065217,75.5799655 33.5936957,75.2123793 C33.9808696,74.8447931 34.2790217,74.4192414 34.4923913,73.9371379 C34.7057609,73.4550345 34.8117391,72.9545517 34.8117391,72.4385172 C34.8117391,71.6778966 34.6633696,71.0558276 34.3680435,70.5737241 C34.0656522,70.0916207 33.6968478,69.6886897 33.2517391,69.3663448 Z" id="Shape"></path>
+                <polygon id="Shape" points="42.5538043 74.3923793 39.2501087 62.0994483 36.6034783 62.0994483 41.0277174 76.4225862 44.0417391 76.4225862 48.6779348 62.0994483 46.051087 62.0994483"></polygon>
+                <path d="M26.1413043,18.3793103 L9.18478261,18.3793103 L9.18478261,24.0344828 L9.18478261,26.862069 L9.18478261,29.6896552 L9.18478261,32.5172414 L9.18478261,35.3448276 L9.18478261,38.1724138 L9.18478261,41 L9.18478261,43.8275862 L9.18478261,49.4827586 L23.3152174,49.4827586 L26.1413043,49.4827586 L55.8152174,49.4827586 L55.8152174,43.8275862 L55.8152174,41 L55.8152174,38.1724138 L55.8152174,35.3448276 L55.8152174,32.5172414 L55.8152174,29.6896552 L55.8152174,24.0344828 L26.1413043,24.0344828 L26.1413043,18.3793103 Z M12.0108696,26.862069 L23.3152174,26.862069 L23.3152174,29.6896552 L12.0108696,29.6896552 L12.0108696,26.862069 Z M12.0108696,32.5172414 L23.3152174,32.5172414 L23.3152174,35.3448276 L12.0108696,35.3448276 L12.0108696,32.5172414 Z M12.0108696,38.1724138 L23.3152174,38.1724138 L23.3152174,41 L12.0108696,41 L12.0108696,38.1724138 Z M23.3152174,46.6551724 L12.0108696,46.6551724 L12.0108696,43.8275862 L23.3152174,43.8275862 L23.3152174,46.6551724 Z M52.9891304,46.6551724 L26.1413043,46.6551724 L26.1413043,43.8275862 L52.9891304,43.8275862 L52.9891304,46.6551724 Z M52.9891304,41 L26.1413043,41 L26.1413043,38.1724138 L52.9891304,38.1724138 L52.9891304,41 Z M52.9891304,35.3448276 L26.1413043,35.3448276 L26.1413043,32.5172414 L52.9891304,32.5172414 L52.9891304,35.3448276 Z M52.9891304,26.862069 L52.9891304,29.6896552 L26.1413043,29.6896552 L26.1413043,26.862069 L52.9891304,26.862069 Z M12.0108696,24.0344828 L12.0108696,21.2068966 L23.3152174,21.2068966 L23.3152174,24.0344828 L12.0108696,24.0344828 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>                        <get-meta-info-file-component
+                                path="/samples/database-download/macaddress-database-download-csv.csv"
+                                format="CSV"
+                        ></get-meta-info-file-component>
+                    </div>
+                    <a href="javascript:void(0)"
+   class="btn green-btn big-green-btn"
+   data-db-request-modal-open-trigger
+>Order database</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+            <section class="trusted-by-companies-block">
+    <div class="content-in-blocks">
+        <h2>Trusted by the following companies</h2>
+        <div class="trusted-companies">
+            <img data-src="https://macaddress.io/images/trusted-by/flex.png" alt="Flex.com" class="lazy">
+            <img data-src="https://macaddress.io/images/trusted-by/webafrica.png" alt="webafrica.co.za" class="lazy">
+            <img data-src="https://macaddress.io/images/trusted-by/wework.png" alt="wework.com" class="lazy">
+            <img data-src="https://macaddress.io/images/trusted-by/guarddog.png" alt="guarddog.ai" class="lazy">
+            <img data-src="https://macaddress.io/images/trusted-by/cybercns.png" alt="cybercns.com" class="lazy">
+        </div>
+        <p>and many more...</p>
+    </div>
+</section>
+        <section class="download-db-ad-block">
+    <div class="content-in-blocks">
+        <h2>Download an exhaustive <span class="green-span">MAC Address Vendor Database</span> for your educational, business or enterprise needs.</h2>
+        <p>Our database comes in the following forms: JSON, CSV, XML, Cisco vendorMacs.xml <span class="span-no-wrap">for maximum</span> compatibility and
+            fast integration into existing systems. The API version is also available.</p>
+        <div class="btns-block">
+            <a href="javascript:void(0)"
+   class="btn green-btn big-green-btn"
+   data-db-request-modal-open-trigger
+>Order database</a>
+            <a href="https://macaddress.io/api/pricing"
+   class="btn big-green-btn border-green-btn"
+>API pricing</a>
+        </div>
+    </div>
+</section>
+        <footer>
+    <div class="content-in-blocks flex-row">
+        <div class="footer-column logo-column flex-row">
+            <div class="svg-wrapper">
+    <a href="https://macaddress.io" title="Mac Address Lookup">
+        <img src="https://macaddress.io/images/logo-black-v2.png" alt="MacAddress.io">
+    </a>
+</div>
+            <p>CodeLine Oy (c) 2018 — 2025</p>
+        </div>
+        <nav class="desktop-menu flex-row">
+    <a href="https://macaddress.io/database-download" title="About MAC vendors database | Database download | MAC Address Vendor Lookup" id="database-download-anchor">Database Download</a>
+    <a href="https://macaddress.io" title="MAC Address Vendor Lookup" id="-anchor" data-additional-anchor="mac-address-lookup">Lookup</a>
+    <a href="https://macaddress.io/api" title="About MAC address API | API | MAC Address Vendor Lookup" id="api-anchor">API</a>
+    <a href="https://macaddress.io/mac-address-generator" title="MAC address generator | MAC Address Vendor Lookup" id="mac-address-generator-anchor">Generator</a>
+    <a href="https://macaddress.io/statistics" title="Global statistics over the MAC address blocks distribution | MAC Address Vendor Lookup" id="statistics-anchor">Statistics</a>
+    <a href="https://macaddress.io/faq" title="Frequently asked questions | FAQ |MAC Address Vendor Lookup"  id="faq-anchor">FAQ</a>
+</nav>
+    </div>
+    <div class="content-in-blocks flex-row">
+        <div class="footer-column">
+            <p>Business ID: FI2915202-4. Hämeentie 31, Helsinki, Finland.</p>
+        </div>
+        <nav class="flex-row">
+            <a href="https://macaddress.io/terms-of-service" class="common-link" title="Terms of Service">Terms of Service</a>
+            <a href="https://macaddress.io/privacy-policy" class="common-link" title="Privacy Policy">Privacy Policy</a>
+        </nav>
+    </div>
+    <div class="content-in-blocks flex-row">
+        <div class="footer-column">
+            <p><a href="mailto:support@macaddress.io">support@macaddress.io</a>.</p>
+        </div>
+    </div>
+</footer>
+        <div class="snackbar" id="snackbar">The data was just refreshed</div>    
+        <cookie-message-component></cookie-message-component>
+        <db-request-modal
+                user-name=""
+                user-email=""
+        ></db-request-modal>
+</div>
+
+<script src="https://macaddress.io/js/bootstrap.js?id=dc82e00c0be89dd886ad5074414a0d63"></script>
+
+
+    <script src="https://macaddress.io/libs/highlight/highlight.pack.js"></script>
+
+<script src="https://macaddress.io/js/app.js?id=25738f650280b64c37c64ed8979a1b25"></script>
+
+</body>
+</html>

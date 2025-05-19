@@ -2,15 +2,17 @@ use pcap::{Capture, Device};
 use macaddr::MacAddr6;
 use ipnetwork::IpNetwork;
 use std::net::{IpAddr, Ipv4Addr};
-use std::collections::HashSet;
+use std::collections::{HashSet, HashMap};
 use std::time::Duration;
 use serde::Serialize;
 use tokio::time::sleep;
-use mac_oui::Oui;
 use pnet::datalink;
 use pnet_packet::arp::{ArpHardwareTypes, ArpOperations, MutableArpPacket};
 use pnet_packet::ethernet::{EtherTypes, MutableEthernetPacket};
 use pnet_packet::Packet;
+use std::convert::TryInto;
+use std::fs::File;
+use std::io::{BufRead, BufReader};
 
 #[derive(Serialize, Debug)]
 pub struct DiscoveredDevice {
@@ -25,6 +27,29 @@ pub fn list_interfaces() -> Result<(), Box<dyn std::error::Error>> {
         println!("{}: {:?}", d.name, d.desc);
     }
     Ok(())
+}
+
+fn load_ieee_oui(csv_path: &str) -> Result<HashMap<String, String>, Box<dyn std::error::Error>> {
+    let file = File::open(csv_path)?;
+    let reader = BufReader::new(file);
+    let mut map = HashMap::new();
+    for line in reader.lines().skip(1) { // skip header
+        let line = line?;
+        let parts: Vec<&str> = line.split(',').collect();
+        if parts.len() > 2 {
+            // "MA-L","28-ED-6A","Xiaomi Communications Co Ltd"
+            let prefix = parts[1].replace("\"", "").replace("-", "").to_uppercase();
+            let vendor = parts[2].trim_matches('"').to_string();
+            map.insert(prefix, vendor);
+        }
+    }
+    Ok(map)
+}
+
+fn lookup_vendor(mac: &str, oui_map: &HashMap<String, String>) -> Option<String> {
+    let mac = mac.replace(":", "").replace("-", "").to_uppercase();
+    let oui = &mac[0..6.min(mac.len())];
+    oui_map.get(oui).cloned()
 }
 
 pub async fn run_arp_scan(iface: &str, cidr: &str) -> Result<(), Box<dyn std::error::Error>> {
@@ -42,9 +67,8 @@ pub async fn run_arp_scan(iface: &str, cidr: &str) -> Result<(), Box<dyn std::er
         .map(|mac| MacAddr6::new(mac.octets()[0], mac.octets()[1], mac.octets()[2], mac.octets()[3], mac.octets()[4], mac.octets()[5]))
         .ok_or("Could not get MAC for interface")?;
 
-    let oui = Oui::from_web()
-        .await
-        .map_err(|e| format!("Failed to load OUI database: {}", e))?;
+    // Load OUI from IEEE CSV file
+    let oui_map = load_ieee_oui("oui.csv").map_err(|e| format!("Failed to load OUI database: {}", e))?;
 
     let network: IpNetwork = cidr.parse()?;
 
@@ -79,10 +103,13 @@ pub async fn run_arp_scan(iface: &str, cidr: &str) -> Result<(), Box<dyn std::er
 
     let results: Vec<DiscoveredDevice> = discovered
         .into_iter()
-        .map(|(ip, mac)| DiscoveredDevice {
-            ip,
-            mac: mac.to_string(),
-            vendor: oui.lookup(mac).map(|v| v.company_name.to_string()),
+        .map(|(ip, mac)| {
+            let vendor = lookup_vendor(&mac.to_string(), &oui_map);
+            DiscoveredDevice {
+                ip,
+                mac: mac.to_string(),
+                vendor,
+            }
         })
         .collect();
 
@@ -96,7 +123,10 @@ fn build_arp_request(our_mac: MacAddr6, target_ip: Ipv4Addr) -> Vec<u8> {
     let mut ethernet_packet = MutableEthernetPacket::new(&mut ethernet_buffer).unwrap();
 
     ethernet_packet.set_destination([0xff, 0xff, 0xff, 0xff, 0xff, 0xff].into()); // Broadcast
-    ethernet_packet.set_source(pnet::util::MacAddr::from(*our_mac.as_bytes())); // Convert MacAddr6 to pnet::util::MacAddr
+
+    // Convert MacAddr6 to pnet::util::MacAddr using [u8; 6]
+    let mac_bytes: [u8; 6] = our_mac.as_bytes().try_into().unwrap();
+    ethernet_packet.set_source(pnet::util::MacAddr::from(mac_bytes));
     ethernet_packet.set_ethertype(EtherTypes::Arp);
 
     let mut arp_buffer = [0u8; 28];
@@ -107,7 +137,9 @@ fn build_arp_request(our_mac: MacAddr6, target_ip: Ipv4Addr) -> Vec<u8> {
     arp_packet.set_hw_addr_len(6);
     arp_packet.set_proto_addr_len(4);
     arp_packet.set_operation(ArpOperations::Request);
-    arp_packet.set_sender_hw_addr(pnet::util::MacAddr::from(*our_mac.as_bytes())); // Convert MacAddr6 to pnet::util::MacAddr
+
+    // Use the same [u8; 6] for sender_hw_addr
+    arp_packet.set_sender_hw_addr(pnet::util::MacAddr::from(mac_bytes));
     arp_packet.set_sender_proto_addr(Ipv4Addr::new(0, 0, 0, 0)); // Use 0.0.0.0 or interface IP
     arp_packet.set_target_hw_addr([0, 0, 0, 0, 0, 0].into()); // Unknown
     arp_packet.set_target_proto_addr(target_ip);
