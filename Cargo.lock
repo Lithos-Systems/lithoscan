@@ -294,7 +294,6 @@ version = "0.1.0"
 dependencies = [
  "clap",
  "ipnetwork 0.20.0",
- "mac_oui",
  "macaddr",
  "pcap",
  "pnet",
@@ -312,20 +311,6 @@ checksum = "07af8b9cdd281b7915f413fa73f29ebd5d55d0d3f0155584dade1ff18cea1b17"
 dependencies = [
  "autocfg",
  "scopeguard",
-]
-
-[[package]]
-name = "mac_oui"
-version = "0.4.11"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f153741e2bfccb6ba874d5466ec624fd62260724b0356e7f76b819bc4082995e"
-dependencies = [
- "byteorder",
- "csv",
- "macaddr",
- "multimap",
- "rangemap",
- "serde",
 ]
 
 [[package]]
