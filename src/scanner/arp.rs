@@ -59,13 +59,25 @@ pub async fn run_arp_scan(iface: &str, cidr: &str) -> Result<(), Box<dyn std::er
         .find(|d| d.name == iface)
         .ok_or("Interface not found")?;
 
-    // Find the MAC address using pnet
-    let our_mac = datalink::interfaces()
+    // Find the MAC address and IPv4 address using pnet
+    let interface = datalink::interfaces()
         .into_iter()
         .find(|i| i.name == iface.name)
-        .and_then(|i| i.mac)
+        .ok_or("Could not get interface info")?;
+
+    let our_mac = interface
+        .mac
         .map(|mac| MacAddr6::new(mac.octets()[0], mac.octets()[1], mac.octets()[2], mac.octets()[3], mac.octets()[4], mac.octets()[5]))
         .ok_or("Could not get MAC for interface")?;
+
+    let our_ip = interface
+        .ips
+        .into_iter()
+        .find_map(|ip| match ip {
+            IpNetwork::V4(v4) => Some(v4.ip()),
+            _ => None,
+        })
+        .ok_or("Could not get IPv4 for interface")?;
 
     // Load OUI from IEEE CSV file
     let oui_map = load_ieee_oui("oui.csv").map_err(|e| format!("Failed to load OUI database: {}", e))?;
@@ -86,7 +98,7 @@ pub async fn run_arp_scan(iface: &str, cidr: &str) -> Result<(), Box<dyn std::er
         if ip == Ipv4Addr::new(0, 0, 0, 0) {
             continue;
         }
-        let arp_packet = build_arp_request(our_mac, ip);
+        let arp_packet = build_arp_request(our_mac, our_ip, ip);
         cap.sendpacket(&arp_packet[..])?;
     }
 
@@ -118,7 +130,7 @@ pub async fn run_arp_scan(iface: &str, cidr: &str) -> Result<(), Box<dyn std::er
     Ok(())
 }
 
-fn build_arp_request(our_mac: MacAddr6, target_ip: Ipv4Addr) -> Vec<u8> {
+fn build_arp_request(our_mac: MacAddr6, our_ip: Ipv4Addr, target_ip: Ipv4Addr) -> Vec<u8> {
     let mut ethernet_buffer = [0u8; 42]; // Ethernet (14) + ARP (28)
     let mut ethernet_packet = MutableEthernetPacket::new(&mut ethernet_buffer).unwrap();
 
@@ -140,7 +152,7 @@ fn build_arp_request(our_mac: MacAddr6, target_ip: Ipv4Addr) -> Vec<u8> {
 
     // Use the same [u8; 6] for sender_hw_addr
     arp_packet.set_sender_hw_addr(pnet::util::MacAddr::from(mac_bytes));
-    arp_packet.set_sender_proto_addr(Ipv4Addr::new(0, 0, 0, 0)); // Use 0.0.0.0 or interface IP
+    arp_packet.set_sender_proto_addr(our_ip); // Use interface IP
     arp_packet.set_target_hw_addr([0, 0, 0, 0, 0, 0].into()); // Unknown
     arp_packet.set_target_proto_addr(target_ip);
 
