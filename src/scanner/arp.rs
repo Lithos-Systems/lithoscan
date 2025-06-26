@@ -77,6 +77,10 @@ pub async fn run_arp_scan(iface: &str, cidr: &str) -> Result<(), Box<dyn std::er
         .timeout(500)
         .open()?;
 
+    // Only capture ARP traffic
+    cap.filter("arp", true)
+        .map_err(|e| format!("Failed to set ARP filter: {}", e))?;
+
     let mut discovered: HashSet<(Ipv4Addr, MacAddr6)> = HashSet::new();
 
     for ip in network.iter().filter_map(|ip| match ip {
